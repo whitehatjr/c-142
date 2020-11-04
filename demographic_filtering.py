@@ -16,5 +16,5 @@ q_movies['score'] = q_movies.apply(weighted_rating, axis=1)
 
 q_movies = q_movies.sort_values('score', ascending=False)
 
-output = q_movies[['title', 'vote_count', 'vote_average', 'poster_link']].head(20).values.tolist()
+output = q_movies[['title', 'poster_link', 'release_date', 'runtime', 'vote_average', 'overview']].head(20).values.tolist()
 
