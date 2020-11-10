@@ -62,7 +62,7 @@ def popular_movies():
         }
         movie_data.append(_d)
     return jsonify({
-        "data": output,
+        "data": movie_data,
         "status": "success"
     }), 200
 
